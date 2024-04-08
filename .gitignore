@@ -163,3 +163,5 @@ cython_debug/
 
 # Results
 .animations/
+
+.data_parquet/
