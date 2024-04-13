@@ -165,3 +165,6 @@ cython_debug/
 .animations/
 
 .data_parquet/
+
+# Kaggle JSON for API and downloading
+kaggle.json
