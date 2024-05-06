@@ -168,3 +168,6 @@ cython_debug/
 
 # Kaggle JSON for API and downloading
 kaggle.json
+
+# Output folder
+.output/
