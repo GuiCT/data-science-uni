@@ -109,8 +109,6 @@ else:
     )
     races_df_raw["datetime"] = pd.to_datetime(
         races_df_raw["date"] + " " + races_df_raw["time"], errors="coerce")
-    # Redundant data
-    races_df_raw = races_df_raw.drop(columns=["date", "time"])
     races_df_raw.to_parquet(".data_parquet/races.parquet")
     del races_df_raw
 
