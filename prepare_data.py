@@ -75,10 +75,13 @@ else:
     # DRIVERS STANDINGS
     driver_standings_df_raw = pd.read_csv(
         ".data/driver_standings.csv",
-        index_col="driverStandingsId"
+        index_col=["raceId", "driverId"]
     )
+    driver_standings_df_raw = driver_standings_df_raw.drop(
+        columns=["driverStandingsId"])
     driver_standings_df_raw.to_parquet(
         ".data_parquet/driver_standings.parquet")
+    del driver_standings_df_raw
     
     # DRIVERS
     drivers_df_raw = pd.read_csv(
