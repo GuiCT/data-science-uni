@@ -171,3 +171,6 @@ kaggle.json
 
 # Output folder
 .output/
+
+# Graph folder
+.graphs/
